@@ -4,10 +4,8 @@ import re
 #Esta función valida el formato de ingreso de datos
 def validarDato(dato):
     patron = r'^\d{1,8}-[\dKk]$'
-    if re.match(patron, dato):
-        return True
-    else:
-        return False
+    return re.match(patron, dato)
+    
 
 #Esta función valida el rut, ingresando como parámetros el número y el digito verificador
 def validarRut(texto,dvRut):
