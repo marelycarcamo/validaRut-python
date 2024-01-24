@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este programa en Python está diseñado para validar el Rol Único Tributario (RUT) chileno. El RUT es un número único e irrepetible que se asigna a las personas y empresas en Chile para fines tributarios.
+<p align=justify">Este programa en Python está diseñado para validar el Rol Único Tributario (RUT) chileno. El RUT es un número único e irrepetible que se asigna a las personas y empresas en Chile para fines tributarios.</p>
 
 El programa consta de tres partes principales:
 
