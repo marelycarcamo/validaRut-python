@@ -4,7 +4,7 @@ import re
 #Esta función valida el formato de ingreso de datos
 def validarDato(dato):
     patron = r'^\d{1,8}-[\dKk]$'
-    return re.match(patron, dato)
+    return re.match(patron, dato)  #Retorna un valor booleano
     
 
 #Esta función valida el rut, ingresando como parámetros el número y el digito verificador
