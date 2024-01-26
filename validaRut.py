@@ -4,8 +4,10 @@ import re
 #Esta función valida el formato de ingreso de datos
 def validarDato(dato):
     patron = r'^\d{1,8}-[\dKk]$'
-    return re.match(patron, dato)  #Retorna un valor booleano
-    
+    if re.match(patron, dato):
+        return True
+    else:
+        return False
 
 #Esta función valida el rut, ingresando como parámetros el número y el digito verificador
 def validarRut(texto,dvRut):
@@ -34,9 +36,7 @@ def validarRut(texto,dvRut):
 while True:
     dato = input("Ingrese rut: ")
     if validarDato(dato):
-        nroRut = dato.split('-')[0]
-        dvRut = (dato[-1]).upper()
-        print("verdadero" if validarRut(nroRut,dvRut) else "falso")
+        print("verdadero" if validarRut(dato.split('-')[0],dato.split('-')[1].upper()) else "falso")
         break
     else:
         print("Ingrese un numero de rut válido")
