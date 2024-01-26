@@ -45,13 +45,12 @@ def validarDato(rut):
     
     # '''
 def validarRut(texto,dvRut):
-    largo = len(texto)
     suma = pos = 0 
-    while -pos < largo:
+    while -pos < len(texto):
         for i in range (2,8):
             pos -=1
             suma += int(texto[pos]) * i
-            if -pos  == largo:
+            if -pos  == len(texto):
                 break
         i +=1
     d = 11 - (suma % 11)
@@ -61,7 +60,6 @@ def validarRut(texto,dvRut):
         dv = "0"
     else:
         dv = str(d)
-        print((dv), (dvRut))
     return dv == dvRut    #Retorna valor booleano
 
 
