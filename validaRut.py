@@ -71,9 +71,9 @@ def validarRut(texto,dvRut):
     # Este código solicita al usuario que ingrese un número de identificación chileno (RUT) y luego lo
     # valide.
 while True:
-    rut = input("Ingrese rut: ")
+    rut = input("Ingrese rut: ")  #-- rut de ejemplo: 11223344-k -->
     if validarDato(rut):
         print("verdadero" if validarRut(rut.split('-')[0],rut.split('-')[1].upper()) else "falso")
         break
     else:
-        print("Ingrese un numero de rut válido")
+        print("Ingrese un numero de rut válido") 
